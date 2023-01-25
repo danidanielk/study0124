@@ -22,6 +22,7 @@ public class TextInsertController {
     @PostMapping("/v1")
     public ResponseEntity test(@RequestBody TextTestDto textTestDto){
     log.info(textTestDto.getText());
+    log.info("text={}",textTestDto.getText());
     textTestService.textsave(textTestDto);
         return new ResponseEntity(HttpStatus.OK);
     }
