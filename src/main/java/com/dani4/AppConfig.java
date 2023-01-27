@@ -15,6 +15,7 @@ public class AppConfig implements WebMvcConfigurer {
                 .allowedHeaders("Authorization", "content-type")
                 .allowCredentials(true)
                 .maxAge(3600L);
+
     }
 
 }
